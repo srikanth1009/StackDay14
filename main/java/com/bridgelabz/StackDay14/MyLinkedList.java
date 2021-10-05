@@ -68,4 +68,13 @@ public class MyLinkedList {
 	        tempNode = tempNode.getNext();
 	        return tempNode;
 	    }
+
+		public void display() {
+			INode temp = head;
+			while (temp != null) {
+				System.out.print(temp.getKey() + "->");
+				temp = temp.getNext();
+			}
+			System.out.print("null");
+		}
 }
