@@ -17,4 +17,17 @@ public class MyStackTest {
 		Assert.assertEquals(myThirdNode,peak);
 
 	}
+	public void given3NumbersInStackWhenPopedShouldMatchWithLastAddedNode() {
+		MyStack myStack = new MyStack();
+		MyNode<Integer> myFirstNode = new MyNode<Integer>(70); 
+		MyNode<Integer> mySecondNode = new MyNode<Integer>(30); 
+		MyNode<Integer> myThirdNode = new MyNode<Integer>(56); 
+		myStack.push(myFirstNode);
+		myStack.push(mySecondNode);
+		myStack.push( myThirdNode);
+		INode pop = myStack.pop();
+		myStack.printStack();
+		Assert.assertEquals(myThirdNode,pop);
+
+    }
 }
