@@ -15,6 +15,10 @@ public class MyQueue<K> {
 		public INode peak() {
 			return myLinkedList.head;
 		}
+		public INode<K> dequeue() {
+			return myLinkedList.popLast();
+		}
+
 
 		public void printQueue() {
 			myLinkedList.display();
